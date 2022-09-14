@@ -1,0 +1,32 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Capital of India
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Quiz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <button type="button" class="btn btn-primary" value="1">1</button>
+                <button type="button" class="btn btn-primary" value="2">2</button>
+                <button type="button" class="btn btn-primary" value="3">3</button>
+                <button type="button" class="btn btn-primary" value="4">4</button>
+                <div ng-switch="1">
+                    <p>What is the capital city of hydarabad ?</p>
+                    <button type="button" class="btn btn-light" (click)="onPress()">Mumbai</button>
+                    <button type="button" class="btn btn-light" (click)="onPressd()">Delhi</button>
+                    <button type="button" class="btn btn-light" (click)="onPressh()">Hyderabad</button>
+                    <button type="button" class="btn btn-light" (click)="onPressk()">Kolkata</button>
+                </div>
+                <p>{{result}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
